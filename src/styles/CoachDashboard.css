@@ -1,0 +1,85 @@
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0.1rem auto;
+  padding: 2.5rem;
+  color: #f1f1f1;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dashboard-header p {
+  font-size: 1.1rem;
+  color: #c7c7c7;
+  max-width: 500px;
+  margin: 0.5rem auto 0 auto;
+}
+
+.history-list-coach {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.history-item-coach {
+  background: rgba(30, 30, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s;
+}
+
+.history-item-coach:hover {
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.history-item-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+.history-item-body p {
+  margin: 0.5rem 0;
+}
+
+.history-item-actions {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.edit-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #ffd700;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #ffeb3b;
+}

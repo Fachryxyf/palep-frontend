@@ -1,0 +1,201 @@
+/* File: src/styles/Navbar.css */
+
+.navbar {
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(25, 25, 25, 0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #c7c7c7;
+  font-weight: 600;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffd700;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd700;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.coach-login-link {
+  background-color: rgba(255, 215, 0, 0.1);
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.coach-login-link:hover,
+.coach-login-link.active {
+  background-color: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+}
+
+.coach-login-link::after {
+  display: none;
+}
+
+.logout-button-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #c7c7c7;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 8px 0;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+  .logout-button-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6b6b;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+
+  .logout-button-nav:hover {
+    color: #ff6b6b;
+  }
+  
+  .logout-button-nav:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logout-button-nav {
+    font-size: 1.5rem;
+  }
+
+  .logout-button-nav:hover {
+    color: #ff6b6b;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    height: 100vh;
+    background: rgba(18, 18, 18, 0.98);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+  }
+
+  .navbar-links.active {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link::after {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #ffffff;
+    z-index: 1001;
+  }
+
+  .logout-button-nav {
+    font-size: 1.5rem;
+  }
+
+  .logout-button-nav:hover {
+    color: #ff6b6b;
+  }
+}

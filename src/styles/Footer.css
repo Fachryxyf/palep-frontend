@@ -1,0 +1,42 @@
+/* File: src/styles/Footer.css */
+
+.footer {
+  background-color: #111111;
+  color: #a0a0a0;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-info p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #a0a0a0;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffd700;
+}

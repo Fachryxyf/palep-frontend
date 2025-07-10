@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit3Gym by Lev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="background-blur"></div>
+        
+        <div class="wireframe-container">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h1>Sistem Pakar Rekomendasi</h1>
+                <p>Deskripsi singkat tentang sistem</p>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #333; padding-bottom: 10px;">
+                <div class="button-wireframe" style="background-color: #ccc;">[Tab: Input Data]</div>
+                <div class="button-wireframe">[Tab: Hasil]</div>
+                <div class="button-wireframe">[Tab: Riwayat]</div>
+            </div>
+
+            <div class="card-wireframe">
+                <h2>Form Input Data</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="input-group-wireframe" style="grid-column: 1 / -1;"><label>Nama Lengkap</label><input type="text"></div>
+                    <div class="input-group-wireframe"><label>Usia</label><input type="text"></div>
+                    <div class="input-group-wireframe"><label>Jenis Kelamin</label><input type="text"></div>
+                    <div class="input-group-wireframe"><label>Berat Badan (kg)</label><input type="text"></div>
+                    <div class="input-group-wireframe"><label>Tinggi Badan (cm)</label><input type="text"></div>
+                    <div class="input-group-wireframe"><label>Tujuan Latihan</label><select></select></div>
+                    <div class="input-group-wireframe"><label>Frekuensi Latihan</label><select></select></div>
+                </div>
+                <div class="button-wireframe" style="width: 100%; margin-top: 10px;">Dapatkan Rekomendasi</div>
+            </div>
+
+            <div class="card-wireframe">
+                <h2>Hasil Rekomendasi untuk "Budi Santoso"</h2>
+                <div style="display: flex; justify-content: space-between; font-size: 14px; color: #555; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px 0; margin-bottom: 20px;">
+                    <span>ID Rekomendasi: #1</span>
+                    <span>Tanggal: 2025-07-10</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <h4>Jenis Latihan</h4>
+                        <div class="placeholder-box" style="height: 30px;">[Teks Jenis Latihan]</div>
+                    </div>
+                    <div>
+                        <h4>Frekuensi</h4>
+                        <div class="placeholder-box" style="height: 30px;">[Teks Frekuensi]</div>
+                    </div>
+                    <div>
+                        <h4>Durasi</h4>
+                        <div class="placeholder-box" style="height: 30px;">[Teks Durasi]</div>
+                    </div>
+                    <div>
+                        <h4>Intensitas</h4>
+                        <div class="placeholder-box" style="height: 30px;">[Teks Intensitas]</div>
+                    </div>
+                </div>
+
+                <div class="input-group-wireframe">
+                    <label>Detail Program</label>
+                    <textarea rows="6">[Teks detail program latihan baris per baris...]</textarea>
+                </div>
+
+                <div class="input-group-wireframe">
+                    <label>Catatan Khusus</label>
+                    <textarea rows="3">[Teks catatan khusus dari sistem atau pelatih...]</textarea>
+                </div>
+
+                <div class="button-wireframe" style="width: 100%; margin-top: 10px;">Cetak Rekomendasi</div>
+            </div>
+
+            <div class="card-wireframe">
+                <h2>Riwayat Rekomendasi</h2>
+                
+                <div class="list-item-wireframe">
+                    <div>
+                        <p><strong>Nama:</strong> Budi Santoso | <strong>Tanggal:</strong> 2025-07-10</p>
+                        <p style="font-size: 14px; color: #555;">Jenis Latihan: Kombinasi Cardio dan Strength</p>
+                    </div>
+                    <div class="button-wireframe">[Lihat Detail]</div>
+                </div>
+
+                <div class="list-item-wireframe">
+                    <div>
+                        <p><strong>Nama:</strong> Citra Lestari | <strong>Tanggal:</strong> 2025-07-09</p>
+                        <p style="font-size: 14px; color: #555;">Jenis Latihan: Latihan Beban Full Body</p>
+                    </div>
+                    <div class="button-wireframe">[Lihat Detail]</div>
+                </div>
+
+                <div class="list-item-wireframe">
+                    <div>
+                        <p><strong>Nama:</strong> Agus Setiawan | <strong>Tanggal:</strong> 2025-07-08</p>
+                        <p style="font-size: 14px; color: #555;">Jenis Latihan: Peningkatan Stamina</p>
+                    </div>
+                    <div class="button-wireframe">[Lihat Detail]</div>
+                </div>
+
+            </div>
+
+            <div class="wireframe-container" style="max-width: 500px;">
+                <div class="card-wireframe" style="padding: 30px;">
+                    <h2 style="text-align: center;">Login Pelatih</h2>
+                    <p style="text-align: center;">Deskripsi singkat halaman login</p>
+                    <div class="input-group-wireframe">
+                        <label>Username</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-group-wireframe">
+                        <label>Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="button-wireframe" style="width: 100%; margin-top: 10px;">Login</div>
+                </div>
+            </div>
+
+            <div class="wireframe-container">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <div>
+                        <h1>Dashboard Pelatih</h1>
+                        <p>Deskripsi halaman dashboard</p>
+                    </div>
+                    <div class="button-wireframe">[Logout]</div>
+                </div>
+
+                <div class="card-wireframe" style="margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>ID Kasus: #1 | Nama: Budi Santoso</span>
+                        <span>Tanggal: 2025-07-10</span>
+                    </div>
+                    <hr>
+                    <p>Detail singkat input dan solusi...</p>
+                    <div style="text-align: right;">
+                        <div class="button-wireframe">[Revisi]</div>
+                    </div>
+                </div>
+                <div class="card-wireframe" style="margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <span>ID Kasus: #2 | Nama: Citra Lestari</span>
+                        <span>Tanggal: 2025-07-09</span>
+                    </div>
+                    <hr>
+                    <p>Detail singkat input dan solusi...</p>
+                    <div style="text-align: right;">
+                        <div class="button-wireframe">[Revisi]</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wireframe-container">
+                <h1 style="text-align: center; margin-bottom: 30px;">Tentang Sistem Ini</h1>
+                <div class="grid-wireframe">
+                    <div class="card-wireframe">
+                        <div class="placeholder-box">[Ikon Fitur]</div>
+                        <h3>Judul Fitur 1</h3>
+                        <p>Deskripsi singkat tentang fitur pertama yang ditawarkan oleh sistem.</p>
+                    </div>
+                    <div class="card-wireframe">
+                        <div class="placeholder-box">[Ikon Fitur]</div>
+                        <h3>Judul Fitur 2</h3>
+                        <p>Deskripsi singkat tentang fitur kedua yang ditawarkan oleh sistem.</p>
+                    </div>
+                    <div class="card-wireframe">
+                        <div class="placeholder-box">[Ikon Fitur]</div>
+                        <h3>Judul Fitur 3</h3>
+                        <p>Deskripsi singkat tentang fitur ketiga yang ditawarkan oleh sistem.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wireframe-container">
+                <div style="text-align: center;">
+                    <div class="placeholder-box" style="width: 200px; height: 80px; margin: 0 auto 20px auto;">[Logo Universitas]</div>
+                    <h1>Credit & Acknowledgement</h1>
+                </div>
+                <div class="grid-wireframe" style="margin-top: 30px;">
+                    <div class="card-wireframe">
+                        <h4>Penulis & Institusi</h4>
+                        <p><strong>Nama:</strong> [Teks Nama]</p>
+                        <p><strong>NPM:</strong> [Teks NPM]</p>
+                        <p><strong>Institusi:</strong> [Teks Institusi]</p>
+                    </div>
+                    <div class="card-wireframe">
+                        <h4>Fakultas & Program Studi</h4>
+                        <p><strong>Fakultas:</strong> [Teks Fakultas]</p>
+                        <p><strong>Program Studi:</strong> [Teks Prodi]</p>
+                    </div>
+                    <div class="card-wireframe" style="grid-column: 1 / -1;">
+                        <h4>Judul Tugas Akhir</h4>
+                        <p>[Teks Judul Tugas Akhir]</p>
+                    </div>
+                    <div class="card-wireframe">
+                        <h4>Pembimbing Materi</h4>
+                        <p>[Nama Pembimbing]</p>
+                    </div>
+                    <div class="card-wireframe">
+                        <h4>Pembimbing Teknik</h4>
+                        <p>[Nama Pembimbing]</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <main class="main-content">
+            </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <p>Sistem Pakar Rekomendasi Program Latihan pada FIT3GYM Jakarta Timur</p>
+                    <p>© 2025 - Skripsi Universitas Indraprasta PGRI</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

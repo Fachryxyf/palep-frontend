@@ -1,0 +1,104 @@
+/* style-wireframe.css */
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    transition: none !important;
+}
+
+/* --- Kerangka Umum --- */
+.wireframe-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.placeholder-box {
+    width: 100%;
+    height: 60px;
+    background-color: #f0f0f0;
+    border: 1px dashed #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #888888;
+    padding: 10px;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: #000000;
+}
+
+/* --- Navbar & Footer --- */
+.navbar-wireframe, .footer-wireframe {
+    border: 2px solid #333;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.navbar-wireframe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links-wireframe {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links-wireframe a {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+/* --- Tombol & Form --- */
+.button-wireframe {
+    display: inline-block;
+    border: 1px solid #333;
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-group-wireframe {
+    margin-bottom: 15px;
+}
+
+.input-group-wireframe label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group-wireframe input,
+.input-group-wireframe select,
+.input-group-wireframe textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+}
+
+/* --- Grid & Card --- */
+.grid-wireframe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-wireframe {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
