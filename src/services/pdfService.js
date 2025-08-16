@@ -67,6 +67,12 @@ export const exportRecommendationToPDF = (recommendation, fileName) => {
   cursorY += 10;
   pdf.setFont('helvetica', 'normal');
   pdf.setFontSize(11);
+  pdf.setFont('helvetica', 'italic');
+  pdf.setFontSize(12);
+  const bulanPeriode = new Date(recommendation.tanggal)
+    .toLocaleString('id-ID', { month: 'long' });
+  pdf.text(`Periode: ${bulanPeriode}`, page_width / 2, cursorY, { align: 'center' });
+  cursorY += 10;
   pdf.text(`Nama Pengguna: ${recommendation.nama}`, margin, cursorY);
   pdf.text(`Tanggal: ${new Date(recommendation.tanggal).toLocaleDateString('id-ID')}`, page_width - margin, cursorY, { align: 'right' });
   cursorY += 10;
